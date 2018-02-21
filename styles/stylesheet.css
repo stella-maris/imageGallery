@@ -1,9 +1,20 @@
 body{
     font-family: 'Raleway', sans-serif;
+    margin: 0px;
 }
 nav {
     font-family: 'Lora', serif;
+    color: #fff;
     width: 100%;
+    padding: 15px;
+    background: #00c4cc;
+    background-image: linear-gradient(139deg, #00C4CC 0%, #7D2AE8 100%);
+    background-size: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(0, 196, 204);
+    background-image: linear-gradient(139deg, #00C4CC 0%, #7D2AE8 100%);
 }
 nav ul {
     list-style-type: none;
@@ -19,6 +30,7 @@ nav li {
 li > a {
     text-decoration: none;
     padding: 10px;
+    color: #fff;
 }
 .responsive img {
     width: 100%;
