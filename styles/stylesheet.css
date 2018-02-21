@@ -1,0 +1,47 @@
+body{
+    font-family: 'Raleway', sans-serif;
+}
+nav {
+    font-family: 'Lora', serif;
+    width: 100%;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+/*    float: right;*/
+}
+
+li > a {
+    text-decoration: none;
+    padding: 10px;
+}
+.responsive img {
+    width: 100%;
+}
+.responsive {
+    width: 25%;
+    float: left;
+}
+
+@media only screen and (max-width: 991px) {
+    .responsive {
+        width: 33.33%
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .responsive {
+        width: 50%
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .responsive {
+        width: 100%
+    }
+}
