@@ -113,6 +113,14 @@ header {
     translate transition: transform 375ms, width 375ms, height 275ms 100ms;
 }
 
+.parent:hover .image-content{
+    opacity: 0.3;
+}
+
+.parent:hover .overlay {
+    opacity: 1;
+}
+
 .wrapper div.image-content {
     position: absolute;
     margin: auto;
@@ -126,10 +134,20 @@ header {
     background: #fff;
     overflow: hidden;
     transition: transform 375ms cubic-bezier(0.4, 0.0, 0.2, 1);
+    
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
 }
 
 .wrapper.open .image-content {
     transform: scale(1);
+    opacity: 1;
+}
+
+.wrapper.open .overlay {
+    display: none;
 }
 
 .wrapper img {
@@ -137,22 +155,30 @@ header {
 }
 
 .text {
-    padding: 30px;
-}
-
-.text .line {
-    height: 13px;
-    background: #999;
-    opacity: 0.7;
-    margin-top: 20px;
+    padding: 10px;
 }
 
 .title {
     width: 80%;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 5px;
 }
 
 .subtitle {
-    width: 60%;
+    width: 100%;
+    font-size: 12px;
+}
+
+.overlay {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 footer {
