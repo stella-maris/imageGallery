@@ -30,18 +30,22 @@ nav ul {
     float: right;
 }
 
+nav ul#mobile {
+    display: none;
+}
+
 nav li {
     display: inline;
 /*    float: right;*/
 }
 
-li > a {
+nav li > a {
     text-decoration: none;
     padding: 10px;
     color: #fff;
 }
 
-li > a:hover {
+nav li > a:hover {
     font-size: 22px;
 }
 
@@ -56,14 +60,6 @@ nav.fadeIn {
     display: none;
 }
 
-/*PRELOADER*/
-/*
-img {
-    background: url(/images/pacman.svg) 50% no-repeat;
-    background-size: contain;
-}
-*/
-
 /*CONTENT STYLE*/
 header {
     text-align: center;
@@ -71,11 +67,14 @@ header {
 }
 .container {
     position: relative;
+    width: 650px;
+    margin: 0 auto;
+}
+.container.image-container {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 650px;
-/*    margin: 0 auto;*/
+    margin: 0;
 }
 .responsive img {
     width: 100%;
@@ -181,6 +180,22 @@ header {
   text-align: center;
 }
 
+.contact ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 0px;
+
+}
+
+i.fa {
+    font-size: 50px;
+}
+
+.about {
+    text-align: center;
+}
+
 footer {
     clear: both;
 }
@@ -211,6 +226,15 @@ footer {
     }
     nav ul{
         display: none;
+    }
+    nav li {
+    padding: 5px 0px;
+    }
+    
+    #mobile.open {
+        clear: both;
+        display: grid;
+        justify-content: right;
     }
     /*    Burger menu button*/
     /*    https://codepen.io/eduardoboucas/pen/rayExg*/
@@ -272,4 +296,8 @@ footer {
             transition: transform 0.5s ease-in-out;
             -webkit-transition: -webkit-transform 0.5s ease-in-out;
         }
+    .contact ul {
+        display: grid;
+        justify-content: center;
+    }
 }
