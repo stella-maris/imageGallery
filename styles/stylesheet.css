@@ -56,6 +56,14 @@ nav.fadeIn {
     display: none;
 }
 
+/*PRELOADER*/
+/*
+img {
+    background: url(/images/pacman.svg) 50% no-repeat;
+    background-size: contain;
+}
+*/
+
 /*CONTENT STYLE*/
 header {
     text-align: center;

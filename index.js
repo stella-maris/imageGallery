@@ -1,14 +1,15 @@
 (function() {
+    //Animation for navbar
     var navbar = document.getElementsByTagName("nav");
     for (i = 0; i < navbar.length; i++) {
         navbar[i].classList.toggle('fadeIn');
     }
     
+//    window.onscroll = function() {
+//        console.log('scrolling');
+//    };
     
-    window.onscroll = function() {
-        console.log('scrolling');
-    };
-    
+    //Animation to enlarge clicked images
     var wrapper = document.getElementsByClassName("wrapper");
     
     function expandImage() {
@@ -24,6 +25,7 @@
         wrapper[j].addEventListener("click", expandImage);
     }
     
+    //Animation for mobile hamburger menu
     var burger = document.getElementsByClassName("burger");
     function animateHamburger() {
         if (this.classList.contains("open")) {
