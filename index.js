@@ -22,5 +22,18 @@
 
     for (j = 0; j < wrapper.length; j++) {
         wrapper[j].addEventListener("click", expandImage);
-    } 
+    }
+    
+    var burger = document.getElementsByClassName("burger");
+    function animateHamburger() {
+        if (this.classList.contains("open")) {
+            //show dropdown menu
+        } else {
+            //hide dropdown menu
+        }
+        this.classList.toggle("open");
+    }
+    for (k = 0; k < burger.length; k++) {
+        burger[k].addEventListener("click", animateHamburger);
+    }
 })()
