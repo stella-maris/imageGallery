@@ -6,6 +6,7 @@ body{
 /*NAVBAR STYLE*/
 nav {
     font-family: 'Lora', serif;
+    font-size: 16px;
     color: #fff;
     width: 100%;
     padding: 15px;
@@ -23,7 +24,10 @@ nav {
 nav ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 5px 15px 0px;    
+    height: 30px;
+    display: flex;
+    float: right;
 }
 
 nav li {
@@ -37,11 +41,19 @@ li > a {
     color: #fff;
 }
 
+li > a:hover {
+    font-size: 22px;
+}
+
 nav.fadeIn {
     opacity: 1;
     position: fixed;
     top: 0px;
     
+}
+
+.mobile-nav {
+    display: none;
 }
 
 /*CONTENT STYLE*/
@@ -135,6 +147,9 @@ header {
     width: 60%;
 }
 
+footer {
+    clear: both;
+}
 @media only screen and (max-width: 991px) {
     .responsive {
         width: 33.33%
@@ -150,5 +165,11 @@ header {
 @media only screen and (max-width: 575px) {
     .responsive {
         width: 100%
+    }
+    nav {
+        display: none;
+    }
+    .mobile-nav {
+        display: block;
     }
 }

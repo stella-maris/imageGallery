@@ -1,6 +1,9 @@
 (function() {
-    var navbar = document.getElementsByTagName("nav")[0];
-    navbar.classList.toggle('fadeIn');
+    var navbar = document.getElementsByTagName("nav");
+    for (i = 0; i < navbar.length; i++) {
+        navbar[i].classList.toggle('fadeIn');
+    }
+    
     
     window.onscroll = function() {
         console.log('scrolling');
@@ -17,7 +20,7 @@
         this.classList.toggle("open");    
     };
 
-    for (i = 0; i < wrapper.length; i++) {
-        wrapper[i].addEventListener("click", expandImage);
+    for (j = 0; j < wrapper.length; j++) {
+        wrapper[j].addEventListener("click", expandImage);
     } 
 })()
