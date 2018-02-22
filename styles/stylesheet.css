@@ -159,12 +159,18 @@ footer {
     clear: both;
 }
 @media only screen and (max-width: 991px) {
+    .container {
+        width: 500px;
+    }
     .responsive {
         width: 33.33%
     }
 }
 
 @media only screen and (max-width: 767px) {
+    .container {
+        width: 350px;
+    }
     .responsive {
         width: 50%
     }

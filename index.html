@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+<!--      Style for loading page placed here for faster above-fold load-->
        <style>
             h1 {
                 text-align: center;
@@ -15,8 +16,9 @@
     <body>
         <h1>Loading...</h1>
         <img src="images/pacman.svg">
-                <script type="text/javascript">
-                //Preloading logic
+        
+        <script type="text/javascript">
+            //Create array of images
             var images = [
                 'images/pup1.png',
                 'images/pup2.png',
@@ -25,8 +27,11 @@
                 'images/pup5.png',
                 'images/pup6.png'
             ];
-
-            for (var l in images) {
+            
+            //Loop through each element
+            //Create img elements to cache images
+            //Once images a created redirect to home.html where image gallery is.
+            for (l = 0; l <images.length; l++) {
                 var img = images[l];
                 var element = document.createElement('img');
                 element.src = img;
